@@ -1,4 +1,4 @@
-function [m, b] = resgresionLineal(X, Y)
+function [m, b] = regresionLineal(X, Y)
   n = numel(X);
   A(2, 2) = n;
   B = zeros(2, 1);
@@ -14,3 +14,4 @@ function [m, b] = resgresionLineal(X, Y)
   sol = A \ B;
   m = sol(1, 1);
   b = sol(2, 1);
+endfunction
